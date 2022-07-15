@@ -1,0 +1,52 @@
+@import "../../../assets/scss/app";
+
+.cardLink {
+  margin: 10px 5px 0;
+  background: $info_dark!important;
+  width: 200px;
+  transition: 0.3s!important;
+
+  & a {
+    display: block;
+    height: 100%;
+  }
+
+  .actionArea {
+    position: relative;
+    @include centeredColumn;
+
+    .imgWrapper {
+      border-radius: 5px;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+
+      img {
+        transition: 0.5s;
+        display: block;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .label {
+      padding: 3px 5px;
+      text-align: center;
+      color: $primary_main;
+      transition: 0.3s;
+    }
+  }
+
+  &:hover {
+    background: #795548!important;
+
+    img {
+      transform: scale(1.1);
+    }
+
+    .label {
+      color: $secondary_main;
+    }
+  }
+}

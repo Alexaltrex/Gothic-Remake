@@ -1,0 +1,122 @@
+//========= BREAK POINTS ===========//
+@mixin tablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: 1240px) {
+    @content;
+  }
+}
+
+@mixin onlyMobile($displayType: block) {
+  display: $displayType;
+  @content;
+
+  @include desktop() {
+    display: none;
+  }
+}
+
+@mixin onlyTablet($displayType: block) {
+  display: none;
+
+  @include tablet {
+    display: $displayType;
+    @content;
+  }
+}
+
+@mixin onlyDesktop($displayType: block) {
+  display: none;
+
+  @include desktop {
+    display: $displayType;
+    @content;
+  }
+}
+
+//========= FONT ===========//
+@mixin h2 {
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+@mixin h3 {
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+@mixin text {
+  font-size: 12px;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+@mixin bigText {
+  font-size: 32px;
+
+  @include tablet {
+    font-size: 36px;
+  }
+}
+
+
+//========= OTHER ===========//
+@mixin spaceBetweenCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@mixin centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin centeredColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin centerRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button() {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absoluteStart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

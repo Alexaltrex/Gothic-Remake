@@ -1,0 +1,20 @@
+@import "../../../assets/scss/app";
+
+.sortBlock {
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  margin-left: 10px;
+
+  .formLabel {
+    display: block;
+    color: $secondary_main!important;
+    @include text;
+    margin-right: 20px;
+  }
+
+  .radioGroup {
+    flex-direction: row;
+  }
+}
+

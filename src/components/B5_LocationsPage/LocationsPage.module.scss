@@ -1,0 +1,32 @@
+@import  "../../assets/scss/app";
+
+.locationsPage {
+
+  .infoBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+    .count {
+      color: $primary_light;
+    }
+  }
+
+  .divider {
+    background-color: $primary_light;
+  }
+
+  .cards {
+    margin-top: 10px;
+
+    .inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: start;
+      margin: -10px -5px 0;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+@import  "../../../assets/scss/app";
+
+.titleWrapper {
+
+  .titleButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+    .title {
+      color: $secondary_main;
+      font-size: 24px;
+      margin: 0 10px 5px;
+
+      @include desktop {
+        font-size: 32px;
+        margin: 0 10px 10px;
+      }
+    }
+
+  }
+
+  .divider {
+    background-color: $primary_light;
+    height: 2px;
+  }
+}
+
+

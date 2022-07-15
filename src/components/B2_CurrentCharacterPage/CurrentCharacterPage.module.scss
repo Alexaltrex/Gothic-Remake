@@ -1,0 +1,110 @@
+@import  "../../assets/scss/app";
+
+.currentCharacterPage {
+
+  .title {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  .content {
+    display: flex;
+
+    @include tablet {
+      padding: 10px;
+    }
+
+    .descriptionBlock {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+
+      .label {
+        @include h2;
+        color: $secondary_main;
+      }
+
+      .divider {
+        margin-top: 5px;
+        border-color: $primary_light;
+      }
+
+      .description {
+        margin-top: 10px;
+        font-size: 16px;
+        color: $primary_main;
+      }
+    }
+
+    .cardBlock {
+      padding: 5px 10px;
+      background: $info_dark;
+      border-radius: 5px;
+
+      @include tablet {
+        margin-left: 20px;
+      }
+
+      .name {
+        @include h2;
+        color: $secondary_main;
+        margin-left: 5px;
+      }
+
+      .description {
+        display: block;
+        font-size: 12px;
+        color: $primary_main;
+        margin-top: 8px;
+        margin-left: 5px;
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      .imgWrapper {
+        position: relative;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+        background: $info_dark;
+        overflow: hidden;
+
+        @include tablet {
+          margin-top: 5px;
+          width: 250px;
+          height: 250px;
+        }
+
+        img {
+          width: 230px;
+
+          @include tablet {
+            width: 250px;
+          }
+        }
+
+        .preloader {
+          @include absoluteStart;
+          @include centerColumn;
+        }
+      }
+
+      .properties {
+        margin-top: 5px;
+      }
+
+    }
+
+  }
+}

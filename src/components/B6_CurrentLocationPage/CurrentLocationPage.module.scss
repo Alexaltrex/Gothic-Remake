@@ -1,0 +1,112 @@
+@import  "../../assets/scss/app";
+
+.currentLocationPage {
+
+  .title {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      padding: 10px;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    .descriptionBlock {
+      margin-top: 10px;
+
+      @include tablet {
+        margin-top: 0;
+      }
+
+      .descriptionPart {
+        display: none;
+
+        @include tablet {
+          display: block;
+        }
+      }
+
+      .label {
+        @include h2;
+        color: $secondary_main;
+      }
+
+      .divider {
+        margin-top: 5px;
+        border-color: $primary_light;
+      }
+
+      .description {
+        margin: 10px 0;
+        font-size: 16px;
+        color: $primary_main;
+      }
+
+      .members {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    }
+
+    .cardBlock {
+      padding: 5px 10px 10px;
+      background: $info_dark;
+      border-radius: 5px;
+      flex-grow: 1;
+
+      @include tablet {
+        margin-left: 20px;
+        flex-grow: 0;
+      }
+
+      .name {
+        font-size: 20px;
+        color: $secondary_main;
+        margin-left: 5px;
+      }
+
+      .description {
+        display: block;
+        font-size: 12px;
+        color: $primary_main;
+        margin-top: 8px;
+        margin-left: 5px;
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      img {
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 300px;
+        border-radius: 5px;
+
+        @include tablet {
+          width: 400px;
+          margin-top: 5px;
+        }
+      }
+
+      .properties {
+        margin-top: 5px;
+      }
+
+    }
+
+  }
+}

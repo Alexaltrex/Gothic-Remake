@@ -1,0 +1,91 @@
+@import  "../../assets/scss/app";
+
+.charactersPage {
+
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px 0;
+
+    @include tablet {
+      padding: 0 10px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .count {
+      color: $primary_light;
+      @include text;
+    }
+  }
+
+  .alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+
+    .item {
+      @include button;
+      padding: 0 6px;
+      color: $primary_light;
+      @include h3;
+
+      &_selected {
+        color: $secondary_main;
+      }
+    }
+  }
+
+  .divider {
+    background-color: $primary_light;
+  }
+
+  .pagination {
+    margin: 5px 0;
+  }
+
+  .paginationList {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list {
+    margin-top: 10px;
+    margin-left: 5px;
+
+    .group {
+      display: flex;
+      margin-top: 10px;
+
+      .groupLabel {
+        color: $secondary_main;
+        flex: 0 0 30px;
+        @include bigText;
+      }
+
+      .listOfGroup {
+        flex-grow: 1;
+        margin-left: 20px;
+      }
+
+      &_location {
+        flex-direction: column;
+
+        .groupLabel {
+          @include h2;
+        }
+
+        .listOfGroup {
+          margin-top: 8px;
+        }
+      }
+
+    }
+
+
+  }
+
+
+}

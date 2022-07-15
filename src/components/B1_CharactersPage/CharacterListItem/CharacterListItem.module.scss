@@ -1,0 +1,54 @@
+@import  "../../../assets/scss/app";
+
+.characterListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 5px 0 0 5px;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: rgba(141,110,99,0.5);
+
+    .imgWrapper {
+      border-color: $secondary_light;
+    }
+
+    .cName {
+      color: $secondary_main;
+    }
+  }
+
+  .imgWrapper {
+    position: relative;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 3px solid #bbb;
+    transition: 0.3s;
+
+    img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+
+      @include desktop {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .preloaderWrapper {
+      @include absoluteStart;
+      @include centerColumn;
+    }
+  }
+
+  .name {
+    color: $primary_main;
+    transition: 0.3s;
+    @include h3;
+  }
+
+}

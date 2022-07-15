@@ -1,0 +1,50 @@
+@import "../../assets/scss/app";
+
+.header {
+  @include spaceBetweenCenter;
+  background-color: $info_dark;
+  padding: 0 20px 0 10px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+
+  @include desktop {
+    padding: 0 20px;
+    height: 65px;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .burgerMenuBtn {
+      @include onlyMobile(flex);
+      margin-right: 10px;
+      color: #FFF;
+    }
+
+    .logo {
+      text-decoration: none;
+      transition: 0.5s;
+
+      &:hover {
+        text-shadow: 0 0 20px #FFF;
+      }
+
+      span {
+        &:nth-child(1) {
+          color: $secondary_main;
+        }
+        &:nth-child(2) {
+          color: $primary_main;
+        }
+      }
+    }
+  }
+
+
+}

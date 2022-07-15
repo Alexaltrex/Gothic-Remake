@@ -1,0 +1,64 @@
+@import  "../../../assets/scss/app";
+
+.homePageLink {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px 10px 0;
+  overflow: hidden;
+  background: $secondary_dark;
+  border: 7px solid $secondary_dark;
+  border-radius: 20px;
+  transition: 0.7s;
+
+  @include desktop {
+    width: 150px;
+    height: 150px;
+    margin: 20px 10px 0;
+    border: 10px solid $secondary_dark;
+  }
+
+  &:hover {
+    background: $secondary_light;
+    border-color: $secondary_light;
+
+    img {
+      transform: scale(1.1);
+    }
+
+    .label {
+      color: $secondary_light;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    transform: scale(1.01);
+
+    @include desktop {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .label {
+    @include absoluteCenter;
+    color: $secondary_main;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 18px;
+
+    @include desktop {
+      font-size: 24px;
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,70 @@
+@import  "../../assets/scss/app";
+
+.burgerMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $aside_width_desktop;
+  height: 100%;
+  overflow: hidden;
+  z-index: 999;
+  transition: 0.3s;
+
+  &_hide {
+    transform: translateX(-100%);
+
+    @include desktop {
+      transform: translateX(0);
+    }
+  }
+
+  .inner {
+    background: $info_main;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0%);
+
+    .link {
+      text-decoration: none;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      color: #FFF;
+      background: $info_main;
+      transition: 0.3s;
+
+      svg * {
+        transition: 0.3s;
+      }
+
+      .label {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background: #795548;
+      }
+
+      &_selected {
+        background: $info_light;
+
+        svg * {
+          fill: $secondary_main;
+        }
+
+        .label {
+          color: $primary_light;
+        }
+
+        &:hover {
+          background: $info_light;
+        }
+      }
+
+    }
+
+  }
+}

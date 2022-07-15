@@ -1,0 +1,6 @@
+@import "../../assets/scss/app";
+
+.homePage {
+  @include centerRow;
+  flex-wrap: wrap;
+}

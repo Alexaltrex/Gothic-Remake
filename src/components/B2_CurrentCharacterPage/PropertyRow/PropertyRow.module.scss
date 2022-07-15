@@ -1,0 +1,28 @@
+@import  "../../../assets/scss/app";
+
+.propertyRow {
+  padding: 0px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+
+  .label {
+    font-size: 12px;
+    line-height: 166%;
+    color: $primary_light;
+  }
+
+  .value {
+    font-size: 12px;
+    line-height: 166%;
+    color: $secondary_light;
+  }
+
+  .link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

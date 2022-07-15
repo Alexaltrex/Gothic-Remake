@@ -1,0 +1,26 @@
+@import  "../../assets/scss/app";
+
+.guildsPage {
+
+  .infoBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+    .count {
+      color: $primary_light;
+    }
+  }
+
+  .divider {
+    background-color: $primary_light;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;//space-between;
+  }
+
+}

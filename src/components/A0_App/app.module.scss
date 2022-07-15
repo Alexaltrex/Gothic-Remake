@@ -1,0 +1,84 @@
+@import  "../../assets/scss/app";
+
+.app {
+  height: 100vh;
+  background: #30231d;
+  //background: rgba(0, 0, 0, 0.9) url(../../assets/jpeg/bgr_app.jpg) no-repeat center;
+  //background-size: cover;
+  //background-blend-mode: overlay;
+
+  .inner {
+    background: grey;
+    height: 100vh;
+
+    @include desktop {
+      width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content {
+      position: relative;
+      height: calc(100vh - 50px);
+      //display: flex;
+
+      @include desktop {
+        height: calc(100vh - 65px);
+      }
+
+      .aside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $aside_width_desktop;
+        height: 100%;
+        background: blue;
+      }
+
+      .main {
+        position: relative;
+        background: #475a3f url(../../assets/jpeg/bgr/home.jpg) no-repeat center;//#8d6e63
+        background-size: cover;
+        background-blend-mode: overlay;
+        overflow: auto;
+        height: calc(100vh - 50px);
+        box-sizing: border-box;
+        padding: 16px;
+
+        @include desktop {
+          margin-left: $aside_width_desktop;
+          height: calc(100vh - 65px);
+          padding: 32px;
+        }
+
+        &_locations {
+          background: #1c2218 url(../../assets/jpeg/bgr/locations.jpg) no-repeat center;
+          background-size: cover;
+          background-blend-mode: overlay;
+        }
+
+        &_religions {
+          background: #58694b url(../../assets/jpeg/bgr/religions.jpg) no-repeat center;
+          background-size: cover;
+          background-blend-mode: overlay;
+        }
+
+        &_races {
+          background: #21261b url(../../assets/jpeg/bgr/races.jpg) no-repeat center;
+          background-size: cover;
+          background-blend-mode: overlay;
+        }
+
+        &_guilds {
+          background: #21261b url(../../assets/jpeg/bgr/guilds.jpg) no-repeat center;
+          background-size: cover;
+          background-blend-mode: overlay;
+        }
+
+      }
+
+
+    }
+
+  }
+}

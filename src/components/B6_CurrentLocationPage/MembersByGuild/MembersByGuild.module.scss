@@ -1,0 +1,23 @@
+@import  "../../../assets/scss/app";
+
+.membersByGuild {
+  .membersOfGuildBlock {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+
+    .guildName {
+      @include h3;
+      align-self: flex-start;
+      color: $secondary_light;
+      border-bottom: 1px solid $primary_light;
+    }
+
+    .membersOfGuild {
+      margin-top: 8px;
+    }
+  }
+}

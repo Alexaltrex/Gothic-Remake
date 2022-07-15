@@ -1,0 +1,94 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+}
+
+"Character"
+type Character {
+    code: String
+    description: String!
+    guild: Guild!
+    id: ID!
+    image: Image!
+    location: Location!
+    male: String!
+    name: String!
+    race: Race!
+    religion: Religion
+    role: String
+    status: String!
+    sublocation: Location
+}
+
+"Characters with pagination"
+type CharactersByPage {
+    characters: [Character!]!
+    pages: Int!
+}
+
+"Guild of character"
+type Guild {
+    description: String!
+    id: ID!
+    image: Image!
+    members: [Character!]!
+    name: String!
+}
+
+type Image {
+    large: String
+    small: String
+}
+
+"Location in Gothic world"
+type Location {
+    description: String!
+    id: ID!
+    image: Image!
+    members: [Character!]!
+    name: String!
+}
+
+type Query {
+    "Get character by ID"
+    character(id: ID!): Character!
+    "Get all characters"
+    characters: [Character!]!
+    "Get characters with pagination"
+    charactersByPage(page: Int!): CharactersByPage!
+    "Get guild by id"
+    guild(id: ID!): Guild!
+    "Get all guilds"
+    guilds: [Guild!]!
+    "Get location by id"
+    location(id: ID!): Location!
+    "Get all locations"
+    locations: [Location!]!
+    "Get race by id"
+    race(id: ID!): Race!
+    "Get all races"
+    races: [Race!]!
+    "Get religion by id"
+    religion(id: ID!): Religion!
+    "Get all religions"
+    religions: [Religion!]!
+}
+
+"Race of character"
+type Race {
+    description: String!
+    id: ID!
+    image: Image!
+    members: [Character!]
+    name: String!
+}
+
+"Religion in Gothic world"
+type Religion {
+    description: String!
+    id: ID!
+    image: Image!
+    members: [Character!]!
+    name: String!
+}
