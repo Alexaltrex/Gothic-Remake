@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Gothic-Remake/static/css/main.f2d758cb.css",
+    "main.js": "/Gothic-Remake/static/js/main.b42e3508.js",
+    "static/js/787.af587609.chunk.js": "/Gothic-Remake/static/js/787.af587609.chunk.js",
+    "static/media/religions.jpg": "/Gothic-Remake/static/media/religions.9b4a40d149751c436527.jpg",
+    "static/media/races.jpg": "/Gothic-Remake/static/media/races.e6dd4f233b9a6fc35edc.jpg",
+    "static/media/locations.jpg": "/Gothic-Remake/static/media/locations.89c12d045a83e59799e9.jpg",
+    "static/media/home.jpg": "/Gothic-Remake/static/media/home.333611b1dd28b1ee48fd.jpg",
+    "static/media/guilds.jpg": "/Gothic-Remake/static/media/guilds.2abbdfe42c1f7fdc1400.jpg",
+    "static/media/characters.jpg": "/Gothic-Remake/static/media/characters.33cc3ef410a123277338.jpg",
+    "index.html": "/Gothic-Remake/index.html",
+    "main.f2d758cb.css.map": "/Gothic-Remake/static/css/main.f2d758cb.css.map",
+    "main.b42e3508.js.map": "/Gothic-Remake/static/js/main.b42e3508.js.map",
+    "787.af587609.chunk.js.map": "/Gothic-Remake/static/js/787.af587609.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2d758cb.css",
+    "static/js/main.b42e3508.js"
+  ]
+}
